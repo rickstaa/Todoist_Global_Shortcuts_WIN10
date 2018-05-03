@@ -18,6 +18,8 @@ Since TODOIST its Windows 10 app doesn’t support global shortcuts at the momen
 
 ### The download link is not working for me what now?
 If the download link fails for some reason try the "zip file download button" in the left right corner. If that also fails go to the project repository by clicking on the "View on github button". On this repository page click the "Clone/Download" button and then the "Zip" button.
+![download button](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/blob/gh-pages/images/download_button.png)
+
 
 ### The workaround is not working what now?
 - Make sure AutoHotkey is running on startup.
