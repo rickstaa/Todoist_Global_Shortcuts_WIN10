@@ -17,7 +17,7 @@ Since TODOIST its Windows 10 app doesn’t support global shortcuts at the momen
 ## FAQ
 
 ### The download link is not working for me what now?
-If the download link fails for some reason try the "zip file download button" in the left right corner. If that also fails go to the project repository by clicking on the "View on github button". On this repository page click the "Clone/Download" button and then the "Zip" button.
+If the download link fails for some reason try the "zip file download button" in the left-right corner. If that also fails to go to the project repository by clicking on the "View on GitHub button". On this repository, page click the "Clone/Download" button and then the "Zip" button.
 
 ### The workaround is not working what now?
 - Make sure AutoHotkey is running on startup.
