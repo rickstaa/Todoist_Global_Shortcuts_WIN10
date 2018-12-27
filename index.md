@@ -9,10 +9,12 @@ Since TODOIST its Windows 10 app doesn’t support global shortcuts at the momen
 ### Instructions AutoHotKey workaround
 1. [Download AutoHotKey.](https://autohotkey.com/)
 2. Install AutoHotKey.
-3. [Download the Workaround.](http://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip)
+3. [Download the Workaround.](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip)
 4. Unzip the Workaround file.
 5. Go to the "Todoist_Global_Shortcuts_WIN10\TODOIST_AHK" folder.
-6. Click on the "installer.vbs" file to install the workaround.
+6. Click on the `installer.vbs` or `installer_todoist_preview.vbs` file to install the workaround.
+    - Use the `installer.vbs` file to install the global shortcut for the regular "Todoist" windows 10 app.
+    - Use the `installer_todoist_preview.vbs` file to install the global shortcut for the "Todoist Preview" windows 10 app.
 
 ## FAQ
 
