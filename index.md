@@ -39,4 +39,3 @@ When the AppUserModelID is found, it can be used in to create an "AutoHotKey" fi
 
 ### What is the VBS workaround?
 This workaround is the first workaround I created it can be used by people that don't like using AutoHotKey. See the README.txt in the TODOIST_VBS folder for instructions.
-
