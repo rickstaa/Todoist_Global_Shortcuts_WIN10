@@ -3,4 +3,4 @@ description: Workaround for the windows 10 Todoist app
 show_downloads: true
 zip_url:  https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip
 google_analytics:
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
