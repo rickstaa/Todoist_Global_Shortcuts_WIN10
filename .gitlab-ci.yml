@@ -11,16 +11,34 @@ test:
   stage: test
   script:
   - bundle exec jekyll build -d test
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  - echo "created public dir for html pages"
   artifacts:
     paths:
     - test
   except:
-  - master
+  - gh-pages
 
 pages:
   stage: deploy
   script:
   - bundle exec jekyll build -d public
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  - echo "created public dir for html pages"
+  artifacts:
+    paths:
+    - public
+  only:
+  - gh-pages
+
+pages:
+  stage: deploy
+  script:
+
   artifacts:
     paths:
     - public
