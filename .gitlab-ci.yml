@@ -21,3 +21,4 @@ pages:
     paths:
       - public
   only:
+    - gh-pages # this job will affect only the 'master' branch
