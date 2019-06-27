@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang=" en-US ">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  <meta name="description" content="TODOIST - Global shortcuts WIN 10 : Workaround for the windows 10 Todoist app">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+
+  <title>TODOIST - Global shortcuts WIN 10</title>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <a id="forkme_banner" href="">View on GitHub</a>
+
+      <h1 id="project_title">TODOIST - Global shortcuts WIN 10</h1>
+      <h2 id="project_tagline">Workaround for the windows 10 Todoist app</h2> 
+      <section id="downloads">
+        <a class="zip_download_link" href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip">Download this project as a .zip file</a>
+      </section>
+      
+    </header>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <!-- Github buttons -->
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch rickstaa/Todoist_Global_Shortcuts_WIN10 on GitHub">Watch</a>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10" data-icon="octicon-star" data-size="large" aria-label="Star rickstaa/Todoist_Global_Shortcuts_WIN10 on GitHub">Star</a>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork rickstaa/Todoist_Global_Shortcuts_WIN10 on GitHub">Fork</a>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue rickstaa/Todoist_Global_Shortcuts_WIN10 on GitHub">Issue</a>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download rickstaa/Todoist_Global_Shortcuts_WIN10 on GitHub">Download</a>
+      <!-- Github buttons -->
+      <h2 id="this-is-a-workaround-to-use-global-shortcuts-for-todoist-on-windows-10">This is a workaround to use global shortcuts for TODOIST on WINDOWS 10</h2>
+<p><em>Created on 05/07/2017 - Version 2.0</em></p>
+
+<p>Since TODOIST its Windows 10 app doesn’t support global shortcuts at the moment. I made a  little workarounds for the “open TODOIST” global shortcut.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- alt+ctrl+a (Add new task)
+- alt+ctrl+s (open todoist)
+</code></pre></div></div>
+
+<h3 id="instructions-autohotkey-workaround">Instructions AutoHotKey workaround</h3>
+<ol>
+  <li><a href="https://autohotkey.com/">Download AutoHotKey.</a></li>
+  <li>Install AutoHotKey.</li>
+  <li><a href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip">Download the Workaround.</a></li>
+  <li>Unzip the Workaround file.</li>
+  <li>Go to the “Todoist_Global_Shortcuts_WIN10\TODOIST_AHK” folder.</li>
+  <li>Click on the <code class="highlighter-rouge">installer.vbs</code> or <code class="highlighter-rouge">installer_todoist_preview.vbs</code> file to install the workaround.
+    <ul>
+      <li>Use the <code class="highlighter-rouge">installer.vbs</code> file to install the global shortcut for the regular “Todoist” windows 10 app.</li>
+      <li>Use the <code class="highlighter-rouge">installer_todoist_preview.vbs</code> file to install the global shortcut for the “Todoist Preview” windows 10 app.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="faq">FAQ</h2>
+
+<h3 id="the-download-link-is-not-working-for-me-what-now">The download link is not working for me what now?</h3>
+<p>If the download link fails for some reason try the “zip file download button” in the left-right corner. If that also fails to go to the project repository by clicking on the “View on GitHub button”. On this repository, page click the “Clone/Download” button and then the “Zip” button.</p>
+
+<h3 id="the-workaround-is-not-working-what-now">The workaround is not working what now?</h3>
+<ul>
+  <li>Make sure AutoHotkey is running on startup.</li>
+  <li>Ensure that you have the right user privileges to add files to your user startup folder.</li>
+  <li>Still not working go to <a href="https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues">https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues</a></li>
+</ul>
+
+<h3 id="how-does-this-workaround-work">How does this workaround work?</h3>
+<p>A windows 10 universal app can be loaded by using its AppUserModelIDs. This is done by running the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>explorer shell:AppsFolder/AppUserModelID
+</code></pre></div></div>
+
+<p>In this command the “AppUserModelID” refers to the AppUserModelID of the app you want to load. An excellent guide on how to find the AppUserModelID is located on:</p>
+
+<ul>
+  <li><a href="https://jcutrer.com/howto/windows/find-aumid">https://jcutrer.com/howto/windows/find-aumid</a></li>
+</ul>
+
+<p>When the AppUserModelID is found, it can be used in to create an “AutoHotKey” file. This workaround just automates this process.</p>
+
+<h3 id="what-is-the-vbs-workaround">What is the VBS workaround?</h3>
+<p>This workaround is the first workaround I created it can be used by people that don’t like using AutoHotKey. See the README.txt in the TODOIST_VBS folder for instructions.</p>
+
+     <!--<a href="https://www.paypal.me/rstaa"><img src="assets\images\7-2-paypal-donate-button-download-png-thumb.png" style="margin: 0px; padding: 0px; border: 0px; box-shadow: 0px; -webkit-box-shadow: 0 0 0 0;"></a>-->
+    </div>
+
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      
+      <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+  </div>
+
+  
+</body>
+
+</html>
