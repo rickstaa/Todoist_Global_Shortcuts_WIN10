@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  - echo "created public dir for html pages"
+  artifacts:
+    paths:
+    - public
+  only:
+  - gh-pages
