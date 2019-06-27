@@ -1,5 +1,5 @@
 # This is a workaround to use global shortcuts for TODOIST on WINDOWS 10 (V2.0.0)
-:warning: **NOTE:** This is a mirrored repository the original repository can be found on [github](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10).:warning:
+:warning: **NOTE:** This repository is mirrored if you want to contribute to this repository make sure your on the [github](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10) repository and not the gitlab repostitory. :warning:
 
 <br>
 
