@@ -1,24 +1,29 @@
-# requiring the environment of Ruby 2.3.x
-image: ruby:2.3
+ All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
+# https://gitlab.com/pages/hugo/blob/registry/Dockerfile
+image: registry.gitlab.com/pages/hugo:latest
 
-# add bundle cache to 'vendor' for speeding up builds
-cache:
-  paths: 
-    - vendor/
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
 
-before_script:
-  - bundle install --path vendor
+stages:
+  - test
+  - deploy
 
-# the 'pages' job will deploy and build your site to the 'public' path
+# before_script:
+
+test:
+  stage: test
+  script:
+  - hugo
+  except:
+  - master
+
 pages:
   stage: deploy
   script:
-    - bundle exec jekyll build -d public/
-  variables:
-    JEKYLL_ENV: production
-    LANG: "C.UTF-8"
+  - hugo
   artifacts:
     paths:
-      - public
+    - public
   only:
-    - gh-pages # this job will affect only the 'master' branch
+  - gh-pages
