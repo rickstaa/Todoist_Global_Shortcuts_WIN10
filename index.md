@@ -2,13 +2,14 @@
 layout: default
 ---
 
-## This is a workaround to use global shortcuts for TODOIST on WINDOWS 10
-_Created on 05/07/2017 - Version 2.0_
+## This is a workaround to use global shortcuts for TODOIST on WINDOWS 10 (V2.0.0)
 
 Since TODOIST its Windows 10 app doesn’t support global shortcuts at the moment. I made a  little workarounds for the "open TODOIST" global shortcut.
 
     - alt+ctrl+a (Add new task)
     - alt+ctrl+s (open todoist)
+
+:warning: **NOTE:** This is a mirrored repository the original repository can be found on [github](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10).:warning:
 
 ### Instructions AutoHotKey workaround
 1. [Download AutoHotKey.](https://autohotkey.com/)
