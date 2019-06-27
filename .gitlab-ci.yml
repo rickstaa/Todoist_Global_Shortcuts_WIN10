@@ -1,44 +1,9 @@
-image: ruby:2.3
-
-variables:
-  JEKYLL_ENV: production
-  LC_ALL: C.UTF-8
-
-before_script:
-  - bundle install
-
-test:
-  stage: test
-  script:
-  - bundle exec jekyll build -d test
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  - echo "created public dir for html pages"
-  artifacts:
-    paths:
-    - test
-  except:
-  - gh-pages
+image: ruby:2.1
 
 pages:
-  stage: deploy
   script:
-  - bundle exec jekyll build -d public
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  - echo "created public dir for html pages"
-  artifacts:
-    paths:
-    - public
-  only:
-  - gh-pages
-
-pages:
-  stage: deploy
-  script:
-
+  - gem install jekyll
+  - jekyll build -d public/
   artifacts:
     paths:
     - public
