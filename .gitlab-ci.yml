@@ -1,27 +1,26 @@
- All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
-# https://gitlab.com/pages/hugo/blob/registry/Dockerfile
-image: registry.gitlab.com/pages/hugo:latest
+image: ruby:2.3
 
 variables:
-  GIT_SUBMODULE_STRATEGY: recursive
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
 
-stages:
-  - test
-  - deploy
-
-# before_script:
+before_script:
+  - bundle install
 
 test:
   stage: test
   script:
-  - hugo
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
   except:
   - master
 
 pages:
   stage: deploy
   script:
-  - hugo
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
