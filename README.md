@@ -14,7 +14,7 @@ For questions, issues and suggestions go to: <https://github.com/rickstaa/Todois
 
 ### Installation Instructions
 
-To install the Todoist global shortcuts please perform the steps below. A video of the installation procedure can be found [here](https://youtu.be/ebrUnpQdHzI).
+To install the Todoist global shortcuts please perform the steps below:
 
 1.  [Download the WIN 10 Todoist app](https://www.microsoft.com/en-us/p/todoist-to-do-list-and-task-manager/9nblggh1rl1k?activetab=pivot:overviewtab)
 
@@ -32,6 +32,8 @@ To install the Todoist global shortcuts please perform the steps below. A video 
 
     -   Use the `installer.vbs` file to install the global shortcut for the regular "Todoist" windows 10 app.
     -   Use the `installer_todoist_preview.vbs` file to install the global shortcut for the "Todoist Preview" windows 10 app.
+
+[🎥 A video of the installation procedure can be found here](https://youtu.be/ebrUnpQdHzI).
 
 ### Instructions for the VBS workaround
 

@@ -2,45 +2,80 @@
 layout: default
 ---
 
-## This is a workaround to use global shortcuts for TODOIST on WINDOWS 10 (V2.0.0)
+## This is a workaround to use global shortcuts for TODOIST on WINDOWS 10 (V1.0.0)
 
-Since TODOIST its Windows 10 app doesn’t support global shortcuts at the moment. I made a  little workarounds for the "open TODOIST" global shortcut.
+Since Todoist its Windows 10 app doesn’t support global shortcuts at the moment. I made 2 workarounds that add the "open Todoist" and "Add new Todoist tak" global shortcuts to Win 10.
+
+    1. AutoHotKey workaround (Easy to set up, fast and Reliable)
+    2. Vbs Workaround (Hard to setup, can be slow)
+	
+These workarounds add the following global TODOIST shortcuts to WIN 10:
 
     - alt+ctrl+a (Add new task)
     - alt+ctrl+s (open todoist)
 
-:warning: **NOTE:** This is a mirrored repository the original repository can be found on [github](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10).:warning:
+For questions, issues and suggestions go to [the github repository issues page](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues).
 
-### Instructions AutoHotKey workaround
-1. [Download AutoHotKey.](https://autohotkey.com/)
-2. Install AutoHotKey.
-3. [Download the Workaround.](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip)
-4. Unzip the Workaround file.
-5. Go to the "Todoist_Global_Shortcuts_WIN10\TODOIST_AHK" folder.
-6. Click on the `installer.vbs` or `installer_todoist_preview.vbs` file to install the workaround.
-    - Use the `installer.vbs` file to install the global shortcut for the regular "Todoist" windows 10 app.
-    - Use the `installer_todoist_preview.vbs` file to install the global shortcut for the "Todoist Preview" windows 10 app.
+### Installation Instructions
+
+To install the Todoist global shortcuts please perform the steps below:
+
+1.  [Download the WIN 10 Todoist app](https://www.microsoft.com/en-us/p/todoist-to-do-list-and-task-manager/9nblggh1rl1k?activetab=pivot:overviewtab)
+
+2.  [Download AutoHotKey](https://autohotkey.com/).
+
+3.  Install AutoHotKey.
+
+4.  [Download the Workaround](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/archive/master.zip).
+
+5.  Unzip the Workaround file.
+
+6.  Go to the "Todoist_Global_Shortcuts_WIN10\\TODOIST_AHK" folder.
+
+7.  Click on the `installer.vbs` or `installer_todoist_preview.vbs` file to install the workaround.
+
+    -   Use the `installer.vbs` file to install the global shortcut for the regular "Todoist" windows 10 app.
+    -   Use the `installer_todoist_preview.vbs` file to install the global shortcut for the "Todoist Preview" windows 10 app.
+
+[🎥 A video of the installation procedure can be found here](https://youtu.be/ebrUnpQdHzI).
+
+### Instructions for the VBS workaround
+
+For the VBS workaround instructions see the README.txt in the TODOIST_VBS folder.
 
 ## FAQ
 
-### The download link is not working for me what now?
-If the download link fails for some reason try the "zip file download button" in the left-right corner. If that also fails to go to the project repository by clicking on the "View on GitHub button". On this repository, page click the "Clone/Download" button and then the "Zip" button.
+### The workaround is not working what now
 
-### The workaround is not working what now?
-- Make sure AutoHotkey is running on startup.
-- Ensure that you have the right user privileges to add files to your user startup folder.
-- Still not working go to [https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues](https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues)
+-   Make sure AutoHotkey is running on startup.
+-   Ensure that you have the right user privileges to add files to your user startup folder.
+-   Still not working go to <https://github.com/rickstaa/Todoist_Global_Shortcuts_WIN10/issues>
 
-### How does this workaround work?
+### I would like the shortcut to work with TODOIST web is this possible
+
+This shortcut is meant for the windows 10 app. A shortcut autohotkey for the web version can be found on [this](https://github.com/mgroat/Todoist-Global-Hotkey) page.
+
+### How does this workaround work
+
 A windows 10 universal app can be loaded by using its AppUserModelIDs. This is done by running the following command:
 
-	explorer shell:AppsFolder/AppUserModelID
+> explorer shell:AppsFolder/AppUserModelID
 
-In this command the "AppUserModelID" refers to the AppUserModelID of the app you want to load. An excellent guide on how to find the AppUserModelID is located on:
+In this command the "AppUserModelID" refers to the AppUserModelID of the app you want to load. An excellent guide on how to find the AppUserModelID
+is located on:
 
-- [https://jcutrer.com/howto/windows/find-aumid](https://jcutrer.com/howto/windows/find-aumid)
+-   <https://jcutrer.com/howto/windows/find-aumid>
 
 When the AppUserModelID is found, it can be used in to create an "AutoHotKey" file. This workaround just automates this process.
 
-### What is the VBS workaround?
+### What is the VBS workaround
+
 This workaround is the first workaround I created it can be used by people that don't like using AutoHotKey. See the README.txt in the TODOIST_VBS folder for instructions.
+
+## Contributing
+
+Contributions to this repository are welcome. See the [contribution guidelines](contributing.md) for more information.
+
+## License
+
+[MIT](LICENSE)
